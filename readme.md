@@ -19,6 +19,12 @@ git add nombreArchivo (manual archivo o directorio)
 Luego de pasar todo el "STAGING AREA" instantaneamente pasamos todo el "repository" con el comando:
 git commit -m "comentario breve y descriptivo de lo que se estuvo trabajando"
 Al terminar de commitear, se nos genera una version nueva y nos posiciona en el "working directory" automaticamente.
+ya en la pantalla de crear repositroio tengo que completarlo con un nombre unico e irrepetible, dejar tildad la opcion public ty dejar todo como esta
+apartir de ahora puedo usar el comando que crea el tubo entre las dos partes
+git remote add origin https://
+este paso se ejecuta una sola vez y luego tengo que usar el comando :
+git push -u origin master
+para pasar toda la oinfo de mi llocal por el tubo a git hub
 Como controlo los estados de mis archivos/directorios? con el siguiente comando:
 git status
 git log --oneline: para ver los commit
