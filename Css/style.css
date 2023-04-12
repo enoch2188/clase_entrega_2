@@ -1,0 +1,114 @@
+
+.grid div{border: 1px solid black;}
+.grid{
+    display: grid;
+    /* es la propiedad 
+    que nos habilita el uso de grillas */
+    /* grid-template-columns: 300px 100px; */
+    /* grid template columns acepta valores en px, % 
+y fracciones. Los valores pueden ir separados
+por un espacio y los valores van a representar el
+el tama;o de ancho de cada columna */
+    /* grid-template-rows: 100px 400px; */
+    /*acepta valores en px, %, fr y auto. Los valores
+    puede ir separados por un espacio. Los
+    valores representan el tama;o de alto 
+    de cada fila */
+    /* grid-template-rows:  600px 200px 100px 200px; */
+    /* grid-template-columns: 1fr; */
+    grid-template-columns:30% 70%;
+    grid-template-rows:auto auto;
+}
+head{background-color: grey;}
+ul{list-style-type: none;}
+a{text-decoration: none;}
+.img-fluid{width: 100%; height: auto;}
+/* MEDIA QUERIES */
+/* DESKTOP */
+@media (min-width:1024px){
+    /* GRID INDEX */
+    .gridindex{
+     display: grid;
+     grid-template-columns: 100%;
+     grid-template-rows: auto auto auto;
+    }
+   header, footer, ul{display: flex;}
+   main{
+    display: grid;
+    grid-template-areas: 
+    "imgPrincipal imgPrincipal imgPrincipal"
+    "titulo titulo titulo"
+    "pIzq imgTexto pDer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,auto);
+   }
+   .imgPrincipal{grid-area: imgPrincipal;}
+   .titulo{grid-area: titulo;}
+   .parrafoIzq{grid-area: pIzq;}
+   .imgtexto{grid-area: imgtexto;}
+   .parrafoDer{grid-area: pDer;}
+   .just-content-spa-betw
+   {justify-content: space-between;}
+   .align-items-center{align-items: center;}
+   a{color: black; font-size: 28px;
+    padding: 5px; margin: 10px;}
+}
+.jusconbetween{justify-content: 
+    space-between;}
+.flexequip{display: flex;}
+    /* flex */
+li{padding: 20px;}
+.mb20{margin-bottom: 20px;}
+.mt20{margin-top: 20px;}
+.p20{padding: 20px;}
+
+.img-fluid{width: 100%; height: auto;}
+ul{list-style-type: none;}
+a{text-decoration: none; font-size: 22px;}
+h1{text-align: center;}
+h3{-webkit-text-fill-color: gold;}
+body{
+    margin: 0;
+    background-color:silver;
+    background-size: cover;
+    background-repeat: no-repeat;}
+    
+.gridmainequipos{
+        display: grid;
+        grid-template-areas: 
+        "tituloequipos tituloequipos tituloequipos tituloequipos"
+        "EquipA EquipB EquipC EquipD";
+        grid-template-columns: 25% 25% 25% 25%;
+    /* repeat(4, 25%) */
+    grid-template-rows: auto auto;
+    }
+.tituloequipos{grid-area: tituloequipos;}
+.EquipA{grid-area: EquipA;}
+.EquipB{grid-area: EquipB;}
+.EquipC{grid-area: EquipC;}
+.EquipD{grid-area: EquipD;}
+    
+.Equip{
+        background-color: lightgreen; padding: 5px; 
+        margin: 10px; border-radius: 20px;}
+
+/* MOBILE */
+@media (max-width:768px) {
+    header,main,footer{display:flex;
+        flex-direction: column;align-items: 
+        center;}
+        ul{display: flex;padding: 0px;}
+        a{color: blue; font-size: 15px; 
+        padding: 5px; margin: 5px;}
+        p{font-size: 20px;}
+        .gridmainequipos{
+            display: flex;
+            flex-direction: column;
+        }
+        }
+
+footer{background-color: grey;}
+.p20{padding: 20px;}
+img{border-radius: 20px;}
+
+
